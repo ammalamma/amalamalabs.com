@@ -1,0 +1,116 @@
+/* legal.css — Styles for Tossup and TrueMile legal pages */
+
+@layer components {
+
+.legal-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-6) var(--space-24);
+}
+
+.legal-content h1 {
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-2);
+}
+
+.legal-content .subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+
+.legal-content .effective-date {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-12);
+}
+
+.legal-content section {
+  padding: 0;
+  margin-bottom: var(--space-10);
+}
+
+.legal-content h2 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.legal-content h3 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  margin: var(--space-6) 0 var(--space-3);
+  color: var(--color-text);
+}
+
+.legal-content p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+  line-height: var(--leading-relaxed);
+}
+
+.legal-content ul {
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-4) var(--space-6);
+  line-height: var(--leading-relaxed);
+  list-style: disc;
+}
+
+.legal-content li {
+  margin-bottom: var(--space-2);
+}
+
+.legal-content a {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+.legal-content a:hover {
+  color: var(--color-text-link-hover);
+  text-decoration: underline;
+}
+
+.legal-content strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.legal-content .contact-info {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+/* Legal page footer overrides */
+.legal-footer .legal-links {
+  margin-top: var(--space-2);
+}
+
+.legal-footer .legal-links a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+
+.legal-footer .legal-links a:hover {
+  color: var(--color-text);
+}
+
+/* Legal page responsive */
+@media (max-width: 640px) {
+  .legal-content {
+    padding: var(--space-8) var(--space-6) var(--space-16);
+  }
+
+  .legal-content h1 {
+    font-size: var(--text-2xl);
+  }
+}
+
+} /* end @layer components */

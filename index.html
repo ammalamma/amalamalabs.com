@@ -1,56 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amalama Labs - AI Projects and Development">
-    <title>Amalama Labs</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amalama Labs — One operator. AI team. Shipping real products. A product studio by Amber Coffman.">
+  <title>Amalama Labs — Amber Coffman</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">Amalama Labs</a>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Amalama Labs</h1>
-            <p>AI Projects &amp; Development</p>
-        </section>
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header>
+    <nav class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">Amalama Labs</a>
+        <div class="nav__links" id="nav-links">
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#system" class="nav__link">System</a>
+          <a href="#career" class="nav__link">Career</a>
+          <a href="#thinking" class="nav__link">Thinking</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </div>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
 
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <!-- Add project cards here -->
+  <main>
+
+    <!-- ============================================================
+         1. HERO
+         ============================================================ -->
+    <section class="hero ambient-glow" id="hero">
+      <div class="hero__photo-wrapper reveal">
+        <div class="hero__photo-glow"></div>
+        <div class="hero__photo-ring"></div>
+        <img src="assets/images/headshot.jpg" alt="Amber Coffman" class="hero__photo" width="140" height="140">
+      </div>
+      <h1 class="hero__title reveal">Amber Coffman</h1>
+      <p class="hero__subtitle reveal">Founder, Amalama Labs</p>
+      <p class="hero__tagline reveal">One operator. AI team. Building the software that eats the interface layer.</p>
+      <div class="hero__cta reveal">
+        <a href="#contact" class="btn btn--primary"><i class="ph-duotone ph-envelope"></i> Get in Touch</a>
+        <a href="https://www.linkedin.com/in/amber-l-coffman-81b43725" class="btn btn--secondary" target="_blank" rel="noopener"><i class="ph-duotone ph-linkedin-logo"></i> LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. THESIS
+         ============================================================ -->
+    <section class="section gradient-orbs" id="thesis">
+      <div class="container container--narrow">
+        <div class="section-header reveal">
+          <p class="section-header__label">Thesis</p>
+          <h2 class="section-header__title">The AI Window Is Now</h2>
+        </div>
+
+        <div class="card card--glass reveal" style="margin-bottom: var(--space-6);">
+          <p class="card__description" style="font-size: var(--text-base); margin-bottom: var(--space-4);">The companies built in this 18-month window will define the next decade of software. AI doesn't just reduce headcount — it eliminates the coordination tax that caps most companies at mediocrity.</p>
+          <p class="card__description" style="font-size: var(--text-base); margin-bottom: var(--space-4);">Every software interface is splitting into two: one for humans who want visual control, one for AI agents who need structured access. Building for both is the moat.</p>
+          <p class="card__description" style="font-size: var(--text-base); margin-bottom: 0;">I'm not waiting for a team. I have a system — 22 AI consultants, automated intelligence pipelines, and a build-score-ship loop that turns signals into products. The portfolio is the strategy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. PROJECTS
+         ============================================================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__label">What I'm Building</p>
+          <h2 class="section-header__title">Projects</h2>
+          <p class="section-header__description">A portfolio of AI-native products — each one built by one operator with an AI team.</p>
+        </div>
+
+        <div class="project-grid reveal-stagger">
+          <!-- Tossup -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Tossup</h3>
+              <span class="badge badge--shipped"><i class="ph-duotone ph-check-circle"></i> Shipped</span>
             </div>
-        </section>
+            <p class="card__description">12-in-1 decision maker for iOS. Coin flip, dice, wheels, brackets, pros/cons — every way to decide, one dark-mode app.</p>
+            <div class="card__metrics">
+              <div class="card__metric">
+                <span class="card__metric-value">12</span>
+                <span class="card__metric-label">Tools</span>
+              </div>
+              <div class="card__metric">
+                <span class="card__metric-value">iOS</span>
+                <span class="card__metric-label">Platform</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">SwiftUI</span>
+              <span class="tag">iOS 17+</span>
+            </div>
+          </div>
 
-        <section id="about" class="about">
-            <h2>About</h2>
-            <p>Building AI-powered tools and development projects.</p>
-        </section>
+          <!-- TrueMile -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">TrueMile</h3>
+              <span class="badge badge--shipped"><i class="ph-duotone ph-check-circle"></i> Shipped</span>
+            </div>
+            <p class="card__description">Mileage tracker with CarPlay integration and home screen widgets. Automatic trip detection, IRS-compliant reports.</p>
+            <div class="card__metrics">
+              <div class="card__metric">
+                <span class="card__metric-value">CarPlay</span>
+                <span class="card__metric-label">Integration</span>
+              </div>
+              <div class="card__metric">
+                <span class="card__metric-value">Widgets</span>
+                <span class="card__metric-label">WidgetKit</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">SwiftUI</span>
+              <span class="tag">SwiftData</span>
+              <span class="tag">CarPlay</span>
+            </div>
+          </div>
 
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Get in touch to learn more about our work.</p>
-        </section>
-    </main>
+          <!-- Opportunity Engine -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Opportunity Engine</h3>
+              <span class="badge badge--building"><i class="ph-duotone ph-hammer"></i> Building</span>
+            </div>
+            <p class="card__description">AI-powered opportunity scoring pipeline. Ingests signals from 87 sources, scores with Claude, surfaces highest-conviction bets.</p>
+            <div class="card__metrics">
+              <div class="card__metric">
+                <span class="card__metric-value">2,712</span>
+                <span class="card__metric-label">Signals</span>
+              </div>
+              <div class="card__metric">
+                <span class="card__metric-value">87</span>
+                <span class="card__metric-label">Sources</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Claude API</span>
+            </div>
+          </div>
 
-    <footer>
-        <p>&copy; 2026 Amalama Labs. All rights reserved.</p>
-        <p class="legal-links">
-            <a href="/privacy.html">Privacy Policy</a> &middot;
-            <a href="/terms.html">Terms of Use</a>
-        </p>
-    </footer>
+          <!-- NateLens -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">NateLens</h3>
+              <span class="badge badge--built"><i class="ph-duotone ph-package"></i> Built</span>
+            </div>
+            <p class="card__description">AI landscape intelligence feed. Aggregates and clusters signals from 34 curated feeds — VCs, researchers, builders.</p>
+            <div class="card__metrics">
+              <div class="card__metric">
+                <span class="card__metric-value">34</span>
+                <span class="card__metric-label">Feeds</span>
+              </div>
+              <div class="card__metric">
+                <span class="card__metric-value">636</span>
+                <span class="card__metric-label">Posts</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">SQLite</span>
+            </div>
+          </div>
 
-    <script src="js/main.js"></script>
+          <!-- Team Goldilocks -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Team Goldilocks</h3>
+              <span class="badge badge--system"><i class="ph-duotone ph-gear-six"></i> System</span>
+            </div>
+            <p class="card__description">22-person AI executive team. Each consultant is a domain expert with persistent memory, personality, and cross-session context.</p>
+            <div class="card__metrics">
+              <div class="card__metric">
+                <span class="card__metric-value">22</span>
+                <span class="card__metric-label">Consultants</span>
+              </div>
+              <div class="card__metric">
+                <span class="card__metric-value">AI</span>
+                <span class="card__metric-label">Powered</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">Claude</span>
+              <span class="tag">MCP</span>
+              <span class="tag">Knowledge Graph</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. THE SYSTEM
+         ============================================================ -->
+    <section class="section" id="system">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__label">How It Works</p>
+          <h2 class="section-header__title">The System</h2>
+          <p class="section-header__description">Every product starts as a signal. Here's how signals become shipped software.</p>
+        </div>
+
+        <div class="pipeline reveal-stagger">
+          <div class="pipeline__step">
+            <div class="pipeline__icon"><i class="ph-duotone ph-funnel"></i></div>
+            <div class="pipeline__step-title">Collect</div>
+            <div class="pipeline__step-desc">87 sources feeding signals from VCs, researchers, markets, and builders</div>
+            <span class="pipeline__arrow"><i class="ph-duotone ph-arrow-right"></i></span>
+          </div>
+          <div class="pipeline__step">
+            <div class="pipeline__icon"><i class="ph-duotone ph-chart-bar"></i></div>
+            <div class="pipeline__step-title">Score</div>
+            <div class="pipeline__step-desc">AI evaluates every signal against opportunity dimensions and market fit</div>
+            <span class="pipeline__arrow"><i class="ph-duotone ph-arrow-right"></i></span>
+          </div>
+          <div class="pipeline__step">
+            <div class="pipeline__icon"><i class="ph-duotone ph-crosshair"></i></div>
+            <div class="pipeline__step-title">Decide</div>
+            <div class="pipeline__step-desc">Highest-conviction signals surface. The council weighs in.</div>
+            <span class="pipeline__arrow"><i class="ph-duotone ph-arrow-right"></i></span>
+          </div>
+          <div class="pipeline__step">
+            <div class="pipeline__icon"><i class="ph-duotone ph-rocket-launch"></i></div>
+            <div class="pipeline__step-title">Ship</div>
+            <div class="pipeline__step-desc">Build fast, ship to real users, validate with metrics. Repeat.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. CAREER
+         ============================================================ -->
+    <section class="section" id="career">
+      <div class="container container--narrow">
+        <div class="section-header reveal">
+          <p class="section-header__label">Background</p>
+          <h2 class="section-header__title">Career</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline__entry">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2025 — Present</div>
+            <div class="timeline__role">Founder</div>
+            <div class="timeline__company">Amalama Labs</div>
+            <div class="timeline__description">Product studio building AI-native software. Portfolio of apps, intelligence tools, and automated systems — one operator, AI team.</div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2025</div>
+            <div class="timeline__role">VP Product &amp; AI</div>
+            <div class="timeline__company">Diadia Health</div>
+            <div class="timeline__description">Led AI product strategy for health tech platform. Designed AI-powered clinical workflows and data pipelines.</div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2017 — 2025</div>
+            <div class="timeline__role">Chief Growth Officer</div>
+            <div class="timeline__company">Orogamis</div>
+            <div class="timeline__description">8 years leading growth strategy for digital consultancy. Shipped product, design, and technology solutions for enterprise clients.</div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2020 — Present</div>
+            <div class="timeline__role">Mentor</div>
+            <div class="timeline__company">Techstars</div>
+            <div class="timeline__description">Mentoring early-stage founders on product strategy, go-to-market, and AI-native product development.</div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">Education</div>
+            <div class="timeline__role">Product Strategy</div>
+            <div class="timeline__company">Kellogg School of Management</div>
+            <div class="timeline__description">Product strategy program at Northwestern's Kellogg School of Management.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. THINKING
+         ============================================================ -->
+    <section class="section" id="thinking">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__label">Ideas</p>
+          <h2 class="section-header__title">Thinking</h2>
+        </div>
+
+        <div class="thinking-grid reveal-stagger">
+          <div class="card card--thesis">
+            <h3 class="card__title">The Billion-Dollar Solo Company</h3>
+            <p class="card__description">AI doesn't just reduce headcount — it eliminates the coordination tax that caps most companies at mediocrity. One operator with the right AI systems can move faster than a 50-person team drowning in meetings. The first solo billionaire builder is coming.</p>
+          </div>
+          <div class="card card--thesis">
+            <h3 class="card__title">Interface Bifurcation</h3>
+            <p class="card__description">Every software interface is splitting into two: one for humans who want visual control, one for AI agents who need structured access. The companies that build for both will own the next decade. The ones that pick one side will get eaten.</p>
+          </div>
+          <div class="card card--thesis">
+            <h3 class="card__title">The Amber Filter</h3>
+            <p class="card__description">Can one person build it? Can AI maintain it? Can distribution be automated? Does the unit economics work at solo scale? If yes to all four, it's a go. Everything else is noise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. CONTACT
+         ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container container--narrow" style="text-align: center;">
+        <div class="section-header reveal">
+          <p class="section-header__label">Let's Talk</p>
+          <h2 class="section-header__title">Get in Touch</h2>
+          <p class="section-header__description">Building something interesting? Investing in solo founders? I'd love to hear from you.</p>
+        </div>
+        <div class="reveal" style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+          <a href="mailto:amber@amalamalabs.com" class="btn btn--primary"><i class="ph-duotone ph-envelope"></i> Email</a>
+          <a href="https://www.linkedin.com/in/amber-l-coffman-81b43725" class="btn btn--secondary" target="_blank" rel="noopener"><i class="ph-duotone ph-linkedin-logo"></i> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Amalama Labs</div>
+          <p class="footer__tagline">One operator. AI team. Shipping real products.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4>Tossup</h4>
+            <a href="tossup/privacy.html">Privacy Policy</a>
+            <a href="tossup/terms.html">Terms of Use</a>
+            <a href="tossup/support.html">Support</a>
+          </div>
+          <div class="footer__column">
+            <h4>TrueMile</h4>
+            <a href="truemile/privacy.html">Privacy Policy</a>
+            <a href="truemile/terms.html">Terms of Use</a>
+            <a href="truemile/support.html">Support</a>
+          </div>
+          <div class="footer__column">
+            <h4>Connect</h4>
+            <a href="mailto:amber@amalamalabs.com">Email</a>
+            <a href="https://www.linkedin.com/in/amber-l-coffman-81b43725" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Amalama Labs. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/amber-l-coffman-81b43725" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph-duotone ph-linkedin-logo"></i></a>
+          <a href="mailto:amber@amalamalabs.com" aria-label="Email"><i class="ph-duotone ph-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
