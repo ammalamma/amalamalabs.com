@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Amalama Labs — One operator. AI team. Shipping real products. A product studio by Amber Coffman.">
+  <meta name="description" content="Amalama Labs — A product studio by Amber Coffman.">
   <title>Amalama Labs — Amber Coffman</title>
+  <link rel="icon" href="favicon.png?v=2" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css">
 </head>
@@ -19,9 +21,8 @@
         <a href="/" class="nav__logo">Amalama Labs</a>
         <div class="nav__links" id="nav-links">
           <a href="#projects" class="nav__link">Projects</a>
-          <a href="#system" class="nav__link">System</a>
-          <a href="#career" class="nav__link">Career</a>
           <a href="#thinking" class="nav__link">Thinking</a>
+          <a href="team.html" class="nav__link">Team</a>
           <a href="#contact" class="nav__link">Contact</a>
         </div>
         <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
@@ -37,50 +38,21 @@
   <main>
 
     <!-- ============================================================
-         1. HERO
+         HERO
          ============================================================ -->
-    <section class="hero ambient-glow" id="hero">
-      <div class="hero__photo-wrapper reveal">
-        <div class="hero__photo-glow"></div>
-        <div class="hero__photo-ring"></div>
-        <img src="assets/images/headshot.jpg" alt="Amber Coffman" class="hero__photo" width="140" height="140">
-      </div>
-      <h1 class="hero__title reveal">Amber Coffman</h1>
-      <p class="hero__subtitle reveal">Founder, Amalama Labs</p>
-      <p class="hero__tagline reveal">One operator. AI team. Building the software that eats the interface layer.</p>
-      <div class="hero__cta reveal">
-        <a href="#contact" class="btn btn--primary"><i class="ph-duotone ph-envelope"></i> Get in Touch</a>
-        <a href="https://www.linkedin.com/in/amber-l-coffman-81b43725" class="btn btn--secondary" target="_blank" rel="noopener"><i class="ph-duotone ph-linkedin-logo"></i> LinkedIn</a>
-      </div>
+    <section class="hero" id="hero">
+      <h1 class="hero__title reveal">Amalama Labs</h1>
+      <p class="hero__subtitle reveal">A product studio.</p>
     </section>
 
     <!-- ============================================================
-         2. THESIS
-         ============================================================ -->
-    <section class="section gradient-orbs" id="thesis">
-      <div class="container container--narrow">
-        <div class="section-header reveal">
-          <p class="section-header__label">Thesis</p>
-          <h2 class="section-header__title">The AI Window Is Now</h2>
-        </div>
-
-        <div class="card card--glass reveal" style="margin-bottom: var(--space-6);">
-          <p class="card__description" style="font-size: var(--text-base); margin-bottom: var(--space-4);">The companies built in this 18-month window will define the next decade of software. AI doesn't just reduce headcount — it eliminates the coordination tax that caps most companies at mediocrity.</p>
-          <p class="card__description" style="font-size: var(--text-base); margin-bottom: var(--space-4);">Every software interface is splitting into two: one for humans who want visual control, one for AI agents who need structured access. Building for both is the moat.</p>
-          <p class="card__description" style="font-size: var(--text-base); margin-bottom: 0;">I'm not waiting for a team. I have a system — 22 AI consultants, automated intelligence pipelines, and a build-score-ship loop that turns signals into products. The portfolio is the strategy.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         3. PROJECTS
+         PROJECTS
          ============================================================ -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-header__label">What I'm Building</p>
+          <p class="section-header__label">What We're Building</p>
           <h2 class="section-header__title">Projects</h2>
-          <p class="section-header__description">A portfolio of AI-native products — each one built by one operator with an AI team.</p>
         </div>
 
         <div class="project-grid reveal-stagger">
@@ -206,96 +178,7 @@
     </section>
 
     <!-- ============================================================
-         4. THE SYSTEM
-         ============================================================ -->
-    <section class="section" id="system">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-header__label">How It Works</p>
-          <h2 class="section-header__title">The System</h2>
-          <p class="section-header__description">Every product starts as a signal. Here's how signals become shipped software.</p>
-        </div>
-
-        <div class="pipeline reveal-stagger">
-          <div class="pipeline__step">
-            <div class="pipeline__icon"><i class="ph-duotone ph-funnel"></i></div>
-            <div class="pipeline__step-title">Collect</div>
-            <div class="pipeline__step-desc">87 sources feeding signals from VCs, researchers, markets, and builders</div>
-            <span class="pipeline__arrow"><i class="ph-duotone ph-arrow-right"></i></span>
-          </div>
-          <div class="pipeline__step">
-            <div class="pipeline__icon"><i class="ph-duotone ph-chart-bar"></i></div>
-            <div class="pipeline__step-title">Score</div>
-            <div class="pipeline__step-desc">AI evaluates every signal against opportunity dimensions and market fit</div>
-            <span class="pipeline__arrow"><i class="ph-duotone ph-arrow-right"></i></span>
-          </div>
-          <div class="pipeline__step">
-            <div class="pipeline__icon"><i class="ph-duotone ph-crosshair"></i></div>
-            <div class="pipeline__step-title">Decide</div>
-            <div class="pipeline__step-desc">Highest-conviction signals surface. The council weighs in.</div>
-            <span class="pipeline__arrow"><i class="ph-duotone ph-arrow-right"></i></span>
-          </div>
-          <div class="pipeline__step">
-            <div class="pipeline__icon"><i class="ph-duotone ph-rocket-launch"></i></div>
-            <div class="pipeline__step-title">Ship</div>
-            <div class="pipeline__step-desc">Build fast, ship to real users, validate with metrics. Repeat.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         5. CAREER
-         ============================================================ -->
-    <section class="section" id="career">
-      <div class="container container--narrow">
-        <div class="section-header reveal">
-          <p class="section-header__label">Background</p>
-          <h2 class="section-header__title">Career</h2>
-        </div>
-
-        <div class="timeline reveal">
-          <div class="timeline__entry">
-            <div class="timeline__dot"></div>
-            <div class="timeline__date">2025 — Present</div>
-            <div class="timeline__role">Founder</div>
-            <div class="timeline__company">Amalama Labs</div>
-            <div class="timeline__description">Product studio building AI-native software. Portfolio of apps, intelligence tools, and automated systems — one operator, AI team.</div>
-          </div>
-          <div class="timeline__entry">
-            <div class="timeline__dot"></div>
-            <div class="timeline__date">2025</div>
-            <div class="timeline__role">VP Product &amp; AI</div>
-            <div class="timeline__company">Diadia Health</div>
-            <div class="timeline__description">Led AI product strategy for health tech platform. Designed AI-powered clinical workflows and data pipelines.</div>
-          </div>
-          <div class="timeline__entry">
-            <div class="timeline__dot"></div>
-            <div class="timeline__date">2017 — 2025</div>
-            <div class="timeline__role">Chief Growth Officer</div>
-            <div class="timeline__company">Orogamis</div>
-            <div class="timeline__description">8 years leading growth strategy for digital consultancy. Shipped product, design, and technology solutions for enterprise clients.</div>
-          </div>
-          <div class="timeline__entry">
-            <div class="timeline__dot"></div>
-            <div class="timeline__date">2020 — Present</div>
-            <div class="timeline__role">Mentor</div>
-            <div class="timeline__company">Techstars</div>
-            <div class="timeline__description">Mentoring early-stage founders on product strategy, go-to-market, and AI-native product development.</div>
-          </div>
-          <div class="timeline__entry">
-            <div class="timeline__dot"></div>
-            <div class="timeline__date">Education</div>
-            <div class="timeline__role">Product Strategy</div>
-            <div class="timeline__company">Kellogg School of Management</div>
-            <div class="timeline__description">Product strategy program at Northwestern's Kellogg School of Management.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         6. THINKING
+         THINKING
          ============================================================ -->
     <section class="section" id="thinking">
       <div class="container">
@@ -313,26 +196,22 @@
             <h3 class="card__title">Interface Bifurcation</h3>
             <p class="card__description">Every software interface is splitting into two: one for humans who want visual control, one for AI agents who need structured access. The companies that build for both will own the next decade. The ones that pick one side will get eaten.</p>
           </div>
-          <div class="card card--thesis">
-            <h3 class="card__title">The Amber Filter</h3>
-            <p class="card__description">Can one person build it? Can AI maintain it? Can distribution be automated? Does the unit economics work at solo scale? If yes to all four, it's a go. Everything else is noise.</p>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         7. CONTACT
+         CONTACT
          ============================================================ -->
     <section class="section" id="contact">
       <div class="container container--narrow" style="text-align: center;">
         <div class="section-header reveal">
           <p class="section-header__label">Let's Talk</p>
           <h2 class="section-header__title">Get in Touch</h2>
-          <p class="section-header__description">Building something interesting? Investing in solo founders? I'd love to hear from you.</p>
+          <p class="section-header__description">Building something interesting? I'd love to hear from you.</p>
         </div>
-        <div class="reveal" style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
-          <a href="mailto:amber@amalamalabs.com" class="btn btn--primary"><i class="ph-duotone ph-envelope"></i> Email</a>
+        <div class="reveal" style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap; align-items: center;">
+          <a href="mailto:amber@amalamalabs.com" class="btn btn--primary"><i class="ph-duotone ph-envelope"></i> amber@amalamalabs.com</a>
           <a href="https://www.linkedin.com/in/amber-l-coffman-81b43725" class="btn btn--secondary" target="_blank" rel="noopener"><i class="ph-duotone ph-linkedin-logo"></i> LinkedIn</a>
         </div>
       </div>
@@ -348,7 +227,6 @@
       <div class="footer__inner">
         <div>
           <div class="footer__brand">Amalama Labs</div>
-          <p class="footer__tagline">One operator. AI team. Shipping real products.</p>
         </div>
         <div class="footer__links">
           <div class="footer__column">

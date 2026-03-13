@@ -456,7 +456,6 @@
   border-radius: 50%;
   background: var(--color-accent);
   border: 2px solid var(--color-bg);
-  box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
 }
 
 .timeline__entry:first-child .timeline__dot {
