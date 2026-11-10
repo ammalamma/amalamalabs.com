@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/trumile/privacy.html", "destination": "https://trumile.app/privacy", "permanent": true },
+    { "source": "/trumile/privacy", "destination": "https://trumile.app/privacy", "permanent": true },
+    { "source": "/trumile/terms.html", "destination": "https://trumile.app/terms", "permanent": true },
+    { "source": "/trumile/terms", "destination": "https://trumile.app/terms", "permanent": true }
+  ]
+}
